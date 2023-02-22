@@ -1,3 +1,14 @@
-var maicon = 5;
+import express from "express";
+import { config } from "dotenv";
 
-console.log(maicon);
+config();
+
+const app = express();
+
+const port = process.env.PORT || 8100;
+
+app.get("/", (req, res) => {
+  res.send("consegui");
+});
+
+app.listen(port, () => console.log(`listening on port ${port}!`));
