@@ -1,1 +1,3 @@
-console.log("hello worda");
+var maicon = 5;
+
+console.log(maicon);
